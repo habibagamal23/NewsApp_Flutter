@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/main.dart';
+import 'package:news_app/ui/myThem.dart';
 
 class CatograiItem extends StatelessWidget {
 

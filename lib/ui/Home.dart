@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:news_app/main.dart';
+import 'package:news_app/ui/myThem.dart';
+
 
 import 'CatogariItem.dart';
 
@@ -10,15 +11,21 @@ static final Routename = "home";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: myThem.whitcolor,
       appBar:  AppBar(
 
-        title: Text('News App '),
+        title: Text('News App ')
+          ,
+
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
               bottomRight: Radius.circular(20))
           ),
+
         ),
+drawer: Container(
+
+),
 
 body: ListView.builder(
   itemCount: 6,
