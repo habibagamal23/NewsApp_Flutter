@@ -18,8 +18,8 @@ static final Routename = "home";
           ,
 
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),
-              bottomRight: Radius.circular(20))
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50),
+              bottomRight: Radius.circular(50))
           ),
 
         ),
@@ -27,45 +27,61 @@ drawer: Container(
 
 ),
 
-body: ListView.builder(
-  itemCount: 6,
+body: ListView(
     padding: const EdgeInsets.all(8),
-    itemBuilder: (BuildContext context, int index) {
-      return Container(
-        child: Column(
-          children: [
-            Text("Pick your Categary "),
+   children: [
+
+            Container(
+              margin: EdgeInsets.all(8),
+              child: Text("Pick your Categary "
+              ,style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ),
+
             Row(
+
               children: [
+                Spacer(),
                 CatograiItem("assets/image/ball.png", "sport", false , myThem.red),
 
                 CatograiItem("assets/image/Politics.png", "Politics", true , myThem.blue),
+                Spacer(),
               ],
 
             ),
+
             Row(
               children: [
+                Spacer(),
                 CatograiItem("assets/image/health.png", "Health", false , myThem.bink),
 
                 CatograiItem("assets/image/bussines.png", "Bussines", true , myThem.brown),
+                Spacer(),
               ],
 
             ),
+
             Row(
               children: [
-                CatograiItem("assets/image/environment.png", "Environment", false , myThem.red),
+                Spacer(),
+                CatograiItem("assets/image/environment.png", "Environment", false , myThem.lightblue),
 
-                CatograiItem("assets/image/science.png", "Science", true , myThem.blue),
-              ],
+                CatograiItem("assets/image/science.png", "Science", true , myThem.yello),
+                Spacer(),],
 
             ),
+
           ],
         ),
 
       );
 
-    }
-),
-    );
+
+
+
+
   }
 }

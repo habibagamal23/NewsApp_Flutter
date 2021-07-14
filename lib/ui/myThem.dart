@@ -9,4 +9,6 @@ class myThem {
   static var bink =  Color.fromRGBO(239, 74, 131, 1.0);
   static var lightblue =  Color.fromRGBO(10, 155, 220, 1.0);
   static var brown =  Color.fromRGBO(149, 84, 53, 1.0);
+  static var yello =  Color.fromRGBO(236, 159, 5, 1.0);
+
 }

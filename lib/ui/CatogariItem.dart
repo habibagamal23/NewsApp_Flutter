@@ -13,22 +13,26 @@ class CatograiItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: EdgeInsets.all(15),
+      margin: EdgeInsets.all(15),
+
       decoration:  BoxDecoration(
         color: colorr,
-borderRadius: isright? BorderRadius.only(topLeft:Radius.circular(15),topRight:Radius.circular(15)  
-    ,bottomRight: Radius.circular(15), bottomLeft: Radius.circular(0))
-: BorderRadius.only(topLeft:Radius.circular(15),topRight:Radius.circular(15) ,
-    bottomRight: Radius.circular(0), bottomLeft: Radius.circular(15))
+borderRadius: isright? BorderRadius.only(topLeft:Radius.circular(20),
+    topRight:Radius.circular(20)
+    ,bottomRight: Radius.circular(20), bottomLeft: Radius.circular(0))
+: BorderRadius.only(topLeft:Radius.circular(20),topRight:Radius.circular(20) ,
+    bottomRight: Radius.circular(0), bottomLeft: Radius.circular(20))
       ),
 
       child: Column(
+
         children: [
-          Image.asset(Imagee),
+          Image.asset(Imagee,height: 80,width: 110,),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(15),
             child: Text(Title, style: TextStyle(
-              fontSize: 20,
+              fontSize: 15,
               color:myThem.whitcolor
             ),),
           ),
